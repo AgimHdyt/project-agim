@@ -1,0 +1,153 @@
+/* @import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manjari', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.box.sub-box-1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.card:hover .box.sub-box-1 {
+    background: #3CB5B5;
+    transform: translateY(0);
+}
+
+.box.sub-box-1 .content {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.card:hover .box.sub-box-1 .content {
+    opacity: 1;
+}
+
+.box.sub-box-1 .content img {
+    max-width: 100px;
+}
+
+.box.sub-box-1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.box.sub-box-2 {
+    background: #fff;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.card:hover .box.sub-box-2 {
+    transform: translateY(0);
+}
+
+.content a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+.box.sub-box-2 .content a:hover {
+    background: #3CB5B5;
+    border: 1px solid #3CB5B5;
+    color: #fff;
+} */
+
+/* Custom Stylesheet */
+/**
+     * Use this file to override Materialize files so you can update
+     * the core Materialize files in the future
+     *
+     * Made By MaterializeCSS.com
+     */
+
+nav ul a,
+nav .brand-logo {
+    color: #444;
+}
+
+p {
+    line-height: 2rem;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
